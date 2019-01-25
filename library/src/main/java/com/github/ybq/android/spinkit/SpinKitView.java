@@ -87,6 +87,11 @@ public class SpinKitView extends ProgressBar {
         invalidate();
     }
 
+    public void setStyle(Style style) {
+        this.mStyle = style;
+        invalidate();
+    }
+
     @Override
     public void unscheduleDrawable(Drawable who) {
         super.unscheduleDrawable(who);

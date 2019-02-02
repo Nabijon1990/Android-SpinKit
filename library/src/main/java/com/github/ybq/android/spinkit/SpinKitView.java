@@ -89,6 +89,7 @@ public class SpinKitView extends ProgressBar {
 
     public void setStyle(Style style) {
         this.mStyle = style;
+        init();
         invalidate();
     }
 

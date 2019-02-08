@@ -38,7 +38,7 @@ public class SpinKitView extends ProgressBar {
         super(context, attrs, defStyleAttr, defStyleRes);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SpinKitView, defStyleAttr,
                 defStyleRes);
-        mStyle = Style.values()[a.getInt(R.styleable.SpinKitView_SpinKit_Style, 0)];
+        mStyle = Style.values()[a.getInt(R.styleable.SpinKitView_SpinKit_Style, Style.FOLDING_CUBE.ordinal())];
         mColor = a.getColor(R.styleable.SpinKitView_SpinKit_Color, Color.WHITE);
         a.recycle();
         init();
